@@ -41,9 +41,11 @@ func renderN(lineArray []string) {
 
 // Renders input text with no additions
 func render(lineArray []string) {
-	for _, line := range lineArray {
-		fmt.Printf("%s\n", line)
-	}
+	str := strings.Join(lineArray, "\n")
+	// for _, line := range lineArray {
+	// 	fmt.Printf("%s\n", line)
+	// }
+	fmt.Print(str)
 }
 
 func readPipe() (arrayOfStrings []string) {
