@@ -34,8 +34,8 @@ func renderB(lineArray []string) {
 
 // Renders input text with line numbers on all lines, even blank
 func renderN(lineArray []string) {
-	for num, line := range lineArray {
-		fmt.Printf("%d %s\n", num, line)
+	for num, line := range lineArray[:len(lineArray)-1] {
+		fmt.Printf("%d %s\n", num+1, line)
 	}
 }
 
