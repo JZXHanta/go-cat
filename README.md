@@ -17,4 +17,5 @@
   - example: `go-cat -n example.txt`
 
 - If ran with argument '-b', will print contents of input with line numbers on all lines, excluding blank lines
+
   - example: `go-cat -b example.txt`
